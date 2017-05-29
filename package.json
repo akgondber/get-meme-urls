@@ -1,0 +1,45 @@
+{
+  "name": "get-meme-urls",
+  "version": "1.0.0",
+  "description": "Get meme urls",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akgondber/get-meme-urls.git"
+  },
+  "keywords": [
+    "memes",
+    "images",
+    "urls",
+    "meme",
+    "fun"
+  ],
+  "author": "Rushan Alyautdinov <akgondber@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akgondber/get-meme-urls/issues"
+  },
+  "homepage": "https://github.com/akgondber/get-meme-urls",
+  "dependencies": {
+    "got": "^6.7.1"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "is-url": "^1.2.2",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "overrides": [
+      {
+        "files": "test.js",
+        "rules": {
+          "ava/assertion-arguments": 0
+        }
+      }
+    ]
+  }
+}
