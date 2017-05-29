@@ -1,5 +1,4 @@
-# get-meme-urls
-[get-meme-urls.svg](https://travis-ci.org/akgondber/get-meme-urls.svg?branch=master)
+# get-meme-urls [![get-meme-urls.svg](https://travis-ci.org/akgondber/get-meme-urls.svg?branch=master)](https://travis-ci.org/akgondber/get-meme-urls)
 Get meme urls for specified query (default: `agile`).
 
 ## Usage
@@ -7,7 +6,7 @@ Get meme urls for specified query (default: `agile`).
 const getMemeUrls = require('get-meme-urls');
 
 getMemeUrls('tdd').then(result => {
-	// do something with result (array of urls)
+  // do something with result (array of urls)
   // possible result is:
   // [
   //   // previous 5 urls
