@@ -1,5 +1,5 @@
 # get-meme-urls [![get-meme-urls.svg](https://travis-ci.org/akgondber/get-meme-urls.svg?branch=master)](https://travis-ci.org/akgondber/get-meme-urls)
-Get meme urls for specified query (default: `agile`).
+> Get meme urls for specified query (default: `agile`).
 
 ## Usage
 ```js
@@ -15,7 +15,7 @@ getMemeUrls('tdd').then(result => {
   //   // and next 5 urls
   // ]
 }).catch(err => {
-	// handle err
+  // handle err
 });
 ```
 
