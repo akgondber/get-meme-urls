@@ -44,5 +44,5 @@ test('options:apiKey | context:invalidKey - should reject promise with an approp
   };
 
   const error = await t.throws(m(null, options));
-  t.regex(error.message, /Invalid API key/);
+  t.regex(error.message, /(Invalid API key|ApiKey)/);
 });
