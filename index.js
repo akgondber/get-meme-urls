@@ -1,5 +1,6 @@
 'use strict';
 const got = require('got');
+const isUrlRelativeWithoutDomain = require('is-url-relative-without-domain');
 
 const API_SEARCH_URL = 'http://version1.api.memegenerator.net/Instances_Search';
 
@@ -36,7 +37,13 @@ function getMemeUrls(searchQuery, options) {
         const result = body.result;
 
         const instanceUrls = result.map(obj => {
-          return obj.instanceImageUrl;
+          let instanceImageUrl = obj.instanceImageUrl;
+
+          if (isUrlRelativeWithoutDomain(instanceImageUrl)) {
+            instanceImageUrl = `https://cdn.meme.am${instanceImageUrl}`;
+          }
+
+          return instanceImageUrl;
         });
         resolve(instanceUrls);
       } else {
